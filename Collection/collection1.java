@@ -1,17 +1,16 @@
 import java.util.*;
-public class collection
+
+class collection
 {
 	public static void main(String [] args)
 	{
-		//List obj = new ArrayList();
-		List<Integer> obj = new ArrayList<Integer>();
+		List obj = new ArrayList();
 
 		obj.add(10);
 		obj.add(20);
-		obj.add(30);
+		obj.add("Harshada");
 
 		System.out.println(obj);
-
 	}
 }
 
