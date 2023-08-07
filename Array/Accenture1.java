@@ -3,7 +3,7 @@ import java.util.Arrays;
 	
 class Arraydemo
 {
-	public static void main(String[]iargs)
+	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size of array : ");
@@ -12,7 +12,7 @@ class Arraydemo
 
 		int[] arr = new int[size];
 
-		int[] even = new int[size/2];
+		int[] even = new int[size/2 + 1];
 
 		int [] odd = new int[size/2];
 
@@ -45,7 +45,7 @@ class Arraydemo
 		    for (int i=0; i<odd.length; i++)
 		    {
 			          System.out.print(odd[i] + " ");
-		    }
+				  }
 		        System.out.println ();
 
 		int sum = even[even.length -2] + odd[odd.length -2];
