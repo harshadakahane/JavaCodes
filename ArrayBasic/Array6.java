@@ -17,6 +17,9 @@ class Range
 		{
 			arr[i] =sc.nextInt();
 		}
+
+
+		
                 System.out.println("Enter the value of A:");
 
 		int A = sc.nextInt();
