@@ -24,17 +24,37 @@ class Range
 		System.out.println("Enter the value of B:");
 		int B = sc.nextInt();
 
-		for(int i=A ; i<=B; i++)
-		{
-			if(arr[i] == A && arr[i]==B)
-			{
-				System.out.println("Yes");
-			}
 
-			else
+		HashSet<Integer> rangeSet = new HashSet<>();
+
+
+		for(int i=0 ; i<n; i++)
+		{
+			if(arr[i] >= A && arr[i]<=B)
 			{
-				System.out.println("No");
+				rangeSet.add(arr[i]);
 			}
+		}
+
+		boolean containsAllInRange = true;
+		for(int i = A ; i<=B; i++)
+		{
+			if(!rangeSet.contains(i))
+			{
+			       containsAllInRange = false;
+				break;
+			}
+		}
+                
+                System.out.println("Are values of A and B present in an array ?:");
+
+		if(containsAllInRange)
+		{
+		System.out.println("Yes");
+		}
+		else
+		{
+			System.out.println("No");
 		}
 	}
 }
