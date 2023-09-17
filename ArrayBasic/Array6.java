@@ -24,31 +24,22 @@ class Range
 		System.out.println("Enter the value of B:");
 		int B = sc.nextInt();
 
-
-		HashSet<Integer> rangeSet = new HashSet<>();
-
-
+                int count =0;
 		for(int i=0 ; i<n; i++)
 		{
 			if(arr[i] >= A && arr[i]<=B)
 			{
-				rangeSet.add(arr[i]);
+				count++;
 			}
 		}
 
-		boolean containsAllInRange = true;
-		for(int i = A ; i<=B; i++)
-		{
-			if(!rangeSet.contains(i))
-			{
-			       containsAllInRange = false;
-				break;
-			}
-		}
+		//range chi size calculate karyala lagel krn applya tya range madhe pahije value
+	        int rangeSize = B-A +1;
+
                 
                 System.out.println("Are values of A and B present in an array ?:");
 
-		if(containsAllInRange)
+		if(count == rangeSize)
 		{
 		System.out.println("Yes");
 		}
