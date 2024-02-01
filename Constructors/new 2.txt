@@ -1,0 +1,45 @@
+class Nokia
+{
+int mic;
+int speaker;
+int radio;
+
+void setData(int mic, int speaker, int radio)
+{
+mic=34;
+speaker=76;
+radio=67;
+}
+void Display()
+{
+System.out.println(mic);
+System.out.println(speaker);
+System.out.println(radio);
+}
+}
+class Nokia1 extends Nokia
+{
+int Sensor;
+int music;
+void f1()
+{
+System.out.println("Mic and Music on");
+}
+void f2()
+{
+System.out.println("Songs on");
+}
+
+}
+class A 
+{
+public static void main(String[] args)
+{
+Nokia n = new Nokia();
+n.setData();
+n.Display();
+n.f1();
+n.f2();
+
+}
+}
